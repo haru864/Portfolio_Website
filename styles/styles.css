@@ -86,12 +86,19 @@ section {
   position: fixed;
   z-index: 10;
   top: 50%;
-  right: 5%;
+  right: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
+}
+.controlls .active-btn {
+  background-color: var(--color-secondary) !important;
+  transition: all 0.4s ease-in-out;
+}
+.controlls .active-btn i {
+  color: var(--color-white) !important;
 }
 .controlls .controll {
   padding: 1rem;
@@ -105,4 +112,9 @@ section {
   align-items: center;
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
+}
+.controlls .controll i {
+  font-size: 1.2rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
 }/*# sourceMappingURL=styles.css.map */
